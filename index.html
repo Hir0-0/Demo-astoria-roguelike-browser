@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auroria — Ruínas do Mundo Solar</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ── Layout Principal ──────────────────────────────────────────────────── -->
+<div id="app">
+
+  <!-- Viewport do jogo -->
+  <div id="game-viewport">
+    <canvas id="game-canvas" width="720" height="504"></canvas>
+  </div>
+
+  <!-- Barra de Skills [1][2][3][4] -->
+  <div id="skills-bar">
+    <!-- Populado pelo hud.js -->
+    <div style="color:#4A4A4A;font-size:0.7rem;padding:4px">Carregando...</div>
+  </div>
+
+  <!-- Log de Mensagens -->
+  <div id="log-area">
+    <div id="message-log"></div>
+  </div>
+
+  <!-- Sidebar de Stats -->
+  <div id="stats-panel">
+    <!-- Populado pelo hud.js -->
+  </div>
+
+</div>
+
+<!-- ── Painéis Flutuantes ────────────────────────────────────────────────── -->
+
+<!-- Inventário (toggle com I) -->
+<div id="inventory-panel" style="display:none"></div>
+
+<!-- Overlay de menus (início, game over, vitória) -->
+<div id="overlay" style="display:flex"></div>
+
+<!-- Notificação flutuante -->
+<div id="notification"></div>
+
+<!-- ── Bootstrap do Jogo ─────────────────────────────────────────────────── -->
+<script type="module">
+  import Game from './js/core/engine.js';
+
+  // Ajusta canvas ao tamanho da viewport do jogo
+  function resizeCanvas() {
+    const viewport = document.getElementById("game-viewport");
+    const canvas = document.getElementById("game-canvas");
+    const W = viewport.clientWidth;
+    const H = viewport.clientHeight;
+    canvas.width = W;
+    canvas.height = H;
+  }
+
+  window.addEventListener("resize", resizeCanvas);
+  resizeCanvas();
+
+  // Inicia o jogo
+  const game = new Game();
+  await game.init();
+</script>
+
+</body>
+</html>
