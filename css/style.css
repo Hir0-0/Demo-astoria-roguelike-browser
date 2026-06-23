@@ -31,7 +31,7 @@ html, body {
   background: var(--bg-void);
   color: var(--text-main);
   font-family: var(--font-mono);
-  font-size: 30px;
+  font-size: 13px;
   user-select: none;
 }
 
