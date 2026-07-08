@@ -1,0 +1,83 @@
+{
+  "skills": {
+    "solar_burst": {
+      "id": "solar_burst",
+      "name": "Pulso Solar",
+      "char": "☀",
+      "color": "#F1C40F",
+      "type": "active",
+      "targetType": "aoe",
+      "range": 2,
+      "damage": 8,
+      "energyCost": 15,
+      "cooldown": 3,
+      "isItem": true,
+      "stackable": false,
+      "stackCap": 1,
+      "description": "Libera onda de energia solar. Dano em área raio 2."
+    },
+    "crystal_shield": {
+      "id": "crystal_shield",
+      "name": "Escudo Cristal",
+      "char": "◆",
+      "color": "#8E44AD",
+      "type": "active",
+      "targetType": "self",
+      "effect": "shield",
+      "shieldAmount": 10,
+      "energyCost": 10,
+      "duration": 5,
+      "cooldown": 5,
+      "isItem": true,
+      "stackable": false,
+      "stackCap": 1,
+      "description": "Barreira de cristal. Absorve 10 de dano."
+    },
+    "steam_dash": {
+      "id": "steam_dash",
+      "name": "Arranco Vapor",
+      "char": "»",
+      "color": "#5DADE2",
+      "type": "active",
+      "targetType": "directional",
+      "distance": 3,
+      "energyCost": 12,
+      "cooldown": 4,
+      "isItem": true,
+      "stackable": false,
+      "stackCap": 1,
+      "description": "Propulsão a vapor. Move 3 tiles na direção do alvo."
+    },
+    "vine_mend": {
+      "id": "vine_mend",
+      "name": "Cura Vinhas",
+      "char": "♣",
+      "color": "#2ECC71",
+      "type": "active",
+      "targetType": "self",
+      "effect": "heal",
+      "healAmount": 12,
+      "energyCost": 20,
+      "cooldown": 6,
+      "isItem": true,
+      "stackable": false,
+      "stackCap": 1,
+      "description": "Vinhas solarpunk curam o portador. +12 HP."
+    },
+    "phase_blink": {
+      "id": "phase_blink",
+      "name": "Fragmentação de Cristal",
+      "char": "◇",
+      "color": "#5DADE2",
+      "type": "active",
+      "targetType": "directional",
+      "range": 4,
+      "energyCost": 18,
+      "cooldown": 3,
+      "isItem": true,
+      "stackable": false,
+      "stackCap": 1,
+      "description": "Teleporte instantâneo de curto alcance. Atravessa obstáculos no caminho, mas exige um destino livre. Sem dano — mobilidade pura."
+    }
+  }
+}
