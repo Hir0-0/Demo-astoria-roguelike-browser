@@ -1,0 +1,149 @@
+{
+  "enemies": {
+    "rust_crawler": {
+      "id": "rust_crawler",
+      "name": "Engatinhador Enferrujado",
+      "char": "r",
+      "color": "#CD7F32",
+      "hp": 8,
+      "maxHp": 8,
+      "attack": 2,
+      "defense": 0,
+      "xp": 10,
+      "speed": 1,
+      "ai": "chase",
+      "lootTable": [{"id": "scrap_metal", "chance": 0.4}],
+      "skillLootTable": [
+        {"id": "steam_dash",  "chance": 0.05},
+        {"id": "vine_mend",   "chance": 0.05}
+      ],
+      "description": "Um inseto mecânico corroído pela oxidação."
+    },
+    "crystal_shade": {
+      "id": "crystal_shade",
+      "name": "Sombra de Cristal",
+      "char": "s",
+      "color": "#9B59B6",
+      "hp": 5,
+      "maxHp": 5,
+      "attack": 3,
+      "defense": 1,
+      "xp": 15,
+      "speed": 1,
+      "ai": "chase",
+      "lootTable": [{"id": "crystal_shard", "chance": 0.5}],
+      "skillLootTable": [
+        {"id": "solar_burst",   "chance": 0.06},
+        {"id": "crystal_shield","chance": 0.06}
+      ],
+      "description": "Uma entidade formada por fragmentos de cristal solar corrompido."
+    },
+    "steam_golem": {
+      "id": "steam_golem",
+      "name": "Golem a Vapor",
+      "char": "G",
+      "color": "#7F8C8D",
+      "hp": 20,
+      "maxHp": 20,
+      "attack": 4,
+      "defense": 2,
+      "xp": 40,
+      "speed": 1,
+      "ai": "chase",
+      "lootTable": [
+        {"id": "gear_fragment", "chance": 0.7},
+        {"id": "steam_core",    "chance": 0.2}
+      ],
+      "skillLootTable": [
+        {"id": "solar_burst",   "chance": 0.07},
+        {"id": "crystal_shield","chance": 0.07},
+        {"id": "phase_blink",   "chance": 0.08}
+      ],
+      "description": "Um golem industrial abandonado que ainda patrulha as ruínas."
+    },
+    "lava_salamander": {
+      "id": "lava_salamander",
+      "name": "Salamandra de Lava",
+      "char": "l",
+      "color": "#E74C3C",
+      "hp": 15,
+      "maxHp": 15,
+      "attack": 5,
+      "defense": 3,
+      "xp": 15,
+      "speed": 1,
+      "ai": "chase",
+      "elementType": "fire",
+      "elementDamage": 4,
+      "lootTable": [{"id": "crystal_shard", "chance": 0.35}],
+      "skillLootTable": [
+        {"id": "solar_burst", "chance": 0.07}
+      ],
+      "description": "Uma criatura reptiliana que se move entre fendas de lava, deixando rastros incandescentes."
+    },
+    "ice_elemental": {
+      "id": "ice_elemental",
+      "name": "Elemental de Gelo",
+      "char": "i",
+      "color": "#85C1E9",
+      "hp": 20,
+      "maxHp": 20,
+      "attack": 1,
+      "defense": 15,
+      "xp": 35,
+      "speed": 1,
+      "ai": "chase",
+      "elementType": "ice",
+      "elementDamage": 5,
+      "lootTable": [
+        {"id": "crystal_shard", "chance": 0.4},
+        {"id": "scrap_metal",   "chance": 0.2}
+      ],
+      "skillLootTable": [
+        {"id": "crystal_shield", "chance": 0.07}
+      ],
+      "description": "Um bloco de gelo perpétuo animado por energia solar corrompida. Lento, mas quase impenetrável."
+    },
+    "toxic_spore": {
+      "id": "toxic_spore",
+      "name": "Esporo Tóxico",
+      "char": "v",
+      "color": "#27AE60",
+      "hp": 3,
+      "maxHp": 3,
+      "attack": 3,
+      "defense": 3,
+      "xp": 10,
+      "speed": 1,
+      "ai": "chase",
+      "elementType": "poison",
+      "elementDamage": 3,
+      "lootTable": [{"id": "scrap_metal", "chance": 0.25}],
+      "skillLootTable": [
+        {"id": "vine_mend", "chance": 0.06}
+      ],
+      "description": "Um pequeno organismo frágil que estoura em esporos venenosos ao ser atingido."
+    },
+    "lightning_conduit": {
+      "id": "lightning_conduit",
+      "name": "Condutor de Relâmpago",
+      "char": "e",
+      "color": "#F1C40F",
+      "hp": 5,
+      "maxHp": 5,
+      "attack": 10,
+      "defense": 0,
+      "xp": 20,
+      "speed": 1,
+      "ai": "chase",
+      "elementType": "electric",
+      "elementDamage": 6,
+      "lootTable": [{"id": "gear_fragment", "chance": 0.3}],
+      "skillLootTable": [
+        {"id": "steam_dash",  "chance": 0.06},
+        {"id": "phase_blink", "chance": 0.06}
+      ],
+      "description": "Uma haste mecânica errante que acumula carga estática instável. Ataca em rajadas rápidas e fatais."
+    }
+  }
+}
